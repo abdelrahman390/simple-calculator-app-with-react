@@ -1,0 +1,43 @@
+
+#root{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    & .App{
+        & div{
+            text-align: center;
+        }
+        & form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            & p{
+                background-color: #ca98f9;
+                display: block;
+                border-radius: 3px;
+                padding: 10px;
+                width: fit-content;
+            }
+            & input {
+                padding: 5px;
+                font-size: 15px;
+            }
+            & .buttonsContainer{
+                display: flex;
+                gap: 5px;
+                & button{
+                    padding: 10px;
+                    border-radius: 3px;
+                    border: 1px solid #00000047;
+                    font-size: 15px;
+                }
+                & .special{
+                    border: none;
+                    background-color: #ff9a48;
+                }
+            }
+        }
+    }
+}
